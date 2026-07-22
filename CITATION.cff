@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software or the accompanying numerical results, please cite the archived Zenodo release and the associated article."
+title: "Phase-tuned delayed feedback for simultaneous linewidth and relative intensity noise suppression in semiconductor lasers: reproducibility package"
+type: software
+authors:
+  - family-names: "Herrera-Marín"
+    given-names: "Mauricio"
+    affiliation: "Universidad del Desarrollo"
+    email: "mherrera@udd.cl"
+version: 1.0.0
+date-released: 2026-07-22
+repository-code: "https://github.com/mauricio-herrera/phase-tuned-delayed-feedback-lasers"
+url: "https://github.com/mauricio-herrera/phase-tuned-delayed-feedback-lasers"
+license: MIT
+keywords:
+  - semiconductor lasers
+  - delayed optical feedback
+  - Lang-Kobayashi model
+  - linewidth
+  - relative intensity noise
+  - delay differential equations
+  - stochastic simulation

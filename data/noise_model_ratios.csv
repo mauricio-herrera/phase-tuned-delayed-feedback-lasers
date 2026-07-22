@@ -1,0 +1,10 @@
+noise_model,case,phase_diffusion_ratio,integrated_RIN_ratio
+field_spontaneous,solitary,1.0,1.0
+field_spontaneous,tradeoff,0.47069199060945777,1.5645340534128418
+field_spontaneous,win_win,0.7500545361206363,0.47999097363543186
+carrier_current,solitary,1.0,1.0
+carrier_current,tradeoff,0.47069199060945777,1.9243676187368783
+carrier_current,win_win,0.0,0.4999823345283718
+balanced_mixed,solitary,1.0,1.0
+balanced_mixed,tradeoff,0.47069199060945777,1.74445083607486
+balanced_mixed,win_win,0.7500545361206363,0.48998665408190184

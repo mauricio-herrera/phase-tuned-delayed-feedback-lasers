@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors and operating systems
+.DS_Store
+__MACOSX/
+.vscode/
+.idea/
+
+# Local logs and temporary files
+*.log
+*.tmp
+new_results/*.txt
+
+# Keep generated publication figures tracked; ignore transient PNG previews.
+figures/*.png
