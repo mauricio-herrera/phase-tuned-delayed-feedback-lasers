@@ -1,0 +1,7 @@
+# JOSA B 612251 revision: Python 3.12, macOS x86_64/arm64
+# Use PyPI binary wheels to avoid local LLVM/OpenMP builds.
+numpy==2.2.6
+scipy>=1.10,<1.19
+numba==0.61.2
+llvmlite==0.44.0
+matplotlib>=3.6,<4

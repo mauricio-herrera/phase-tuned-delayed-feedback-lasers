@@ -1,0 +1,33 @@
+{
+  "_comment": "theta in units of pi. T = record length after burn-in (normalized time). Lag window for the phase-diffusion fit is given in units of tau (or absolute for tau-independent presets). n_realizations = batches x batch_size.",
+  "smoke": {
+    "description": "Prueba rapida (1-3 min): tau=20, verifica instalacion y backend.",
+    "tau": 20.0, "burn": 400.0, "T": 4000.0, "rec": 0.5,
+    "lag_window_tau": [7.5, 40.0], "batches": 1, "batch_size": 16,
+    "cases": {"solitary": [0.0, 0.0], "tradeoff": [0.008, -0.15583785], "win_win": [0.009, 0.01795167]}
+  },
+  "tau20": {
+    "description": "Casos de la Tabla 1 / Fig. 3 (tau=20). Referencia publicada: Tabla S5.",
+    "tau": 20.0, "burn": 400.0, "T": 40000.0, "rec": 0.5,
+    "lag_window_tau": [7.5, 40.0], "batches": 8, "batch_size": 16,
+    "cases": {"solitary": [0.0, 0.0], "tradeoff": [0.008, -0.15583785], "win_win": [0.009, 0.01795167]}
+  },
+  "long200": {
+    "description": "Cavidad larga tau=200, kappa=0.005 (C=4.1, multi-ECM). Sec. 7, Tabla S14.",
+    "tau": 200.0, "burn": 2000.0, "T": 100000.0, "rec": 1.0,
+    "lag_window_tau": [3.0, 12.0], "batches": 8, "batch_size": 16,
+    "cases": {"solitary": [0.0, 0.0], "tradeoff": [0.005, -0.15583785], "win_win": [0.005, 0.0]}
+  },
+  "long1000": {
+    "description": "Cavidad larga tau=1000, kappa=0.001 (C=4.1, multi-ECM). Sec. 7, Tabla S14.",
+    "tau": 1000.0, "burn": 10000.0, "T": 400000.0, "rec": 2.0,
+    "lag_window_tau": [3.0, 12.0], "batches": 8, "batch_size": 16,
+    "cases": {"solitary": [0.0, 0.0], "tradeoff": [0.001, -0.15583785], "win_win": [0.001, 0.0]}
+  },
+  "fixedkt": {
+    "description": "Opcional: kappa*tau=0.18 fijo, theta=0.018pi (efecto RIN pequeno: 0.933 y 0.985). Muy costoso.",
+    "tau": 200.0, "burn": 2000.0, "T": 200000.0, "rec": 1.0,
+    "lag_window_tau": [3.0, 12.0], "batches": 16, "batch_size": 16,
+    "cases": {"solitary": [0.0, 0.0], "win_win_kt018": [0.0009, 0.01795167]}
+  }
+}

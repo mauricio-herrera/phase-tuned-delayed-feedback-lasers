@@ -304,3 +304,20 @@ https://github.com/mauricio-herrera/phase-tuned-delayed-feedback-lasers
 
 Zenodo archive:  
 https://doi.org/10.5281/zenodo.21498282
+
+---
+
+## JOSA B manuscript 612251 — October 2026 revised results
+
+The **revised** phase-resolved analysis, including the seven new numerical validation scripts,
+ECM branch enumeration, finite-feedback windows, parameter tolerances, mechanism factorization,
+and long-cavity noise results, is documented in
+[docs/REVISION_612251.md](docs/REVISION_612251.md).
+
+- [Numerical code and configurations](code/revision_612251/)
+- [Analytic tables, stochastic summaries, and full raw-data archive](data/revision_612251/)
+- [Revised expected-results comparison](docs/EXPECTED_RESULTS_612251.md)
+- [Re-review response cross-check](docs/REVIEWER_RESPONSE_CROSSCHECK_612251.md)
+
+The earlier Zenodo record cited above refers to the original archive. A new Zenodo
+version of this October revision must be verified separately; **no new-version DOI is claimed here**.
