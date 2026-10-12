@@ -24,7 +24,7 @@ Full SDE reruns are defined by `run_all.sh` and `config/cases.json`. Numerical c
 
 ## Availability and provenance
 
-- The existing project's original Zenodo record remains an earlier archive; a **new Zenodo version has not yet been verified**. Do not cite an unconfirmed new-version DOI.
+- The revised reproducibility package was published as Zenodo **v2.0.0** on **2026-10-12**, DOI: **https://doi.org/10.5281/zenodo.23320753**. The concept/all-versions DOI remains **https://doi.org/10.5281/zenodo.21498282**. Publication status and DOI were checked against the author-provided Zenodo publication screenshot; independent remote checksum comparison has not been performed.
 - Supplemental Figure S2 is available as `data/revision_612251/figS2_long_cavity.pdf`.
 - See [`REVIEWER_RESPONSE_CROSSCHECK_612251.md`](REVIEWER_RESPONSE_CROSSCHECK_612251.md) for the analysis-to-reviewer cross-check.
 
