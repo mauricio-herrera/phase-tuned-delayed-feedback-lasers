@@ -1,6 +1,6 @@
 # Phase-tuned delayed feedback in semiconductor lasers
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21498282.svg)](https://doi.org/10.5281/zenodo.21498282)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23320753.svg)](https://doi.org/10.5281/zenodo.23320753)
 
 Reproducibility package for the manuscript:
 
@@ -10,7 +10,7 @@ This repository contains the Python code, processed numerical outputs, supplemen
 
 The archived release is permanently available on Zenodo:
 
-**DOI:** [10.5281/zenodo.21498282](https://doi.org/10.5281/zenodo.21498282)
+**DOI:** [10.5281/zenodo.23320753](https://doi.org/10.5281/zenodo.23320753)
 
 ---
 
@@ -230,8 +230,8 @@ When using the code, numerical outputs, or figures, please cite the archived Zen
 ```text
 Herrera-Marín, Mauricio. Phase-tuned delayed feedback for simultaneous
 linewidth and relative intensity noise suppression in semiconductor lasers:
-reproducibility package. Version 1.0.0. Zenodo.
-https://doi.org/10.5281/zenodo.21498282
+reproducibility package. Version 2.0.0. Zenodo.
+https://doi.org/10.5281/zenodo.23320753
 ```
 
 A BibTeX entry is:
@@ -242,11 +242,11 @@ A BibTeX entry is:
   title     = {Phase-tuned delayed feedback for simultaneous linewidth and
                relative intensity noise suppression in semiconductor lasers:
                reproducibility package},
-  version   = {1.0.0},
+  version   = {2.0.0},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.21498282},
-  url       = {https://doi.org/10.5281/zenodo.21498282}
+  doi       = {10.5281/zenodo.23320753},
+  url       = {https://doi.org/10.5281/zenodo.23320753}
 }
 ```
 
@@ -263,7 +263,7 @@ The code, processed numerical outputs, and scripts used to reproduce all
 figures and supplementary analyses are publicly available in the GitHub
 repository https://github.com/mauricio-herrera/phase-tuned-delayed-feedback-lasers
 and in its archived Zenodo release at
-https://doi.org/10.5281/zenodo.21498282.
+https://doi.org/10.5281/zenodo.23320753.
 ```
 
 LaTeX version:
@@ -275,7 +275,7 @@ figures and supplementary analyses are publicly available in the GitHub
 repository
 \url{https://github.com/mauricio-herrera/phase-tuned-delayed-feedback-lasers}
 and in its archived Zenodo release,
-\url{https://doi.org/10.5281/zenodo.21498282}.
+\url{https://doi.org/10.5281/zenodo.23320753}.
 ```
 
 ---
@@ -303,7 +303,7 @@ Repository:
 https://github.com/mauricio-herrera/phase-tuned-delayed-feedback-lasers
 
 Zenodo archive:  
-https://doi.org/10.5281/zenodo.21498282
+https://doi.org/10.5281/zenodo.23320753
 
 ---
 
@@ -319,5 +319,4 @@ and long-cavity noise results, is documented in
 - [Revised expected-results comparison](docs/EXPECTED_RESULTS_612251.md)
 - [Re-review response cross-check](docs/REVIEWER_RESPONSE_CROSSCHECK_612251.md)
 
-The earlier Zenodo record cited above refers to the original archive. A new Zenodo
-version of this October revision must be verified separately; **no new-version DOI is claimed here**.
+The revised Zenodo software release **v2.0.0** was published on **12 October 2026**, with version-specific DOI [10.5281/zenodo.23320753](https://doi.org/10.5281/zenodo.23320753). The all-versions DOI is [10.5281/zenodo.21498282](https://doi.org/10.5281/zenodo.21498282); the initial v1.0.0 release was [10.5281/zenodo.21498283](https://doi.org/10.5281/zenodo.21498283). The current DOI identifies the ZIP containing revision analyses and raw stochastic simulations.
