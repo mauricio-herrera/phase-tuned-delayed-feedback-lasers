@@ -1,0 +1,154 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,bm,booktabs,xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+\definecolor{rc}{RGB}{90,90,90}
+\newenvironment{comment}{\par\medskip\noindent\begin{minipage}{\linewidth}\color{rc}\itshape}{\end{minipage}\par\smallskip}
+\newcommand{\resp}{\noindent\textbf{Response.} }
+\newcommand{\chg}{\par\noindent\textbf{Changes.} }
+\begin{document}
+
+\noindent Manuscript ID: 612251\\
+Title: Phase-tuned delayed feedback for simultaneous linewidth and relative intensity noise suppression in semiconductor lasers\\
+Author: Mauricio Herrera-Mar\'in, Universidad del Desarrollo
+
+\bigskip
+\noindent Dear Dr. Zhou,
+
+\noindent Thank you for handling the manuscript and for the opportunity to revise it. I am grateful to the three reviewers for their careful reading and constructive comments. All comments have been addressed. Each comment is reproduced below in gray italics, followed by my response and a description of the changes with their location. In the marked version of the manuscript and Supplement, all new or modified text is shown in blue. Section, equation, figure, and table numbers refer to the revised manuscript.
+
+\medskip
+\noindent\textbf{Summary of the main changes}
+\begin{enumerate}
+\item \textbf{Finite-feedback range of the criterion} (new Sec.~4.1 and Fig.~4(a,b); Supplement S9). The weak-feedback criterion is compared with the full resolvent for $0.002\le\kappa\tau\le0.24$ and for $\tau=20$, $200$, and $1000$. Written in the total return phase $\theta$, the criterion is accurate to $0.01\pi$ for $\kappa\tau\le0.10$ and to $0.02\pi$ for $\kappa\tau\le0.18$ at $\tau=20$, and to $10^{-3}\pi$ for $\tau=200$ and $1000$. The shift in the feedback phase $\phi$ is explained by the ECM phase map, whose derivative is the chirp-reduction factor, $d\phi/d\theta=F$ (new Eq.~(7)).
+\item \textbf{Experimental tolerances} (new Sec.~4.2 and Fig.~4(c); Supplement Tables S11--S12). Phase and feedback-strength tolerances, the distance to the instability boundary, and the conversion to optical path length and reflector displacement are given.
+\item \textbf{Dominant physical mechanism} (Sec.~5 and Fig.~4(d); Supplement Table S3). A factorization of the relaxation-pair RIN shows that the feedback-induced change of relaxation damping dominates; residue normalization and source--output projection are 10--25\% corrections.
+\item \textbf{ECM uniqueness and branch selection} (Sec.~2, new Eqs.~(7)--(8); Sec.~6; Supplement S1 and Table S8). The uniqueness condition $C=\kappa\tau\sqrt{1+\alpha^2}<1$ is stated. All robustness scans with $C>1$ were repeated with complete ECM enumeration, and multistable and non-principal states are identified explicitly.
+\item \textbf{Long external cavities} (new Sec.~7 and Table~2; Supplement S10 and Fig.~S2). Delays $\tau=200$ and $1000$, i.e., 3 and 16 relaxation periods, are analyzed, including the multi-ECM regime and nonlinear stochastic simulations.
+\item \textbf{Correction.} The first-order interval, Eq.~(29), is now given in closed form, $-0.0958\pi<\phi<0.0836\pi$. The previously quoted bounds, $-0.0944\pi$ and $0.0833\pi$, were the nearest points of a discrete phase grid. No conclusion is affected.
+\item \textbf{Independent stability test.} All new scans use a Mikhailov (argument-principle) count that does not rely on the transport-chain discretization. It reproduces the published stability margins to within $10^{-5}$ (Sec.~8; Supplement S4).
+\end{enumerate}
+
+\section*{Editor and pre-production notes}
+
+\begin{comment}Please confirm that all of your funding sources have been added into your Prism submission in the Fees and Funding step.\end{comment}
+\resp The Funding section states that no external funding was received for this work. The corresponding ``Fees and Funding'' metadata in Prism will be verified and aligned with this declaration before the revised submission is finalized.
+
+\begin{comment}Please ensure that all references, figures and tables are called out in the text. Please also check the ordering of your reference, figure and table call outs.\end{comment}
+\resp Thank you. Two issues were found and corrected. (i) Table~1 was cited only in the caption of Fig.~2; it is now cited in the text of Sec.~4, before Fig.~2. (ii) Ref.~[10] (Flunkert and Sch\"oll) was cited in the Introduction but listed near the end of the bibliography. The bibliography has been reordered by first citation. All figures (1--6), tables (1--2), and references are now cited in numerical order. Because of the new Fig.~4, the former Figs.~4 and~5 are now Figs.~5 and~6. The ``Data availability'' and ``Supplemental document'' statements now follow the Optica style.
+
+\section*{Reviewer 1}
+
+\begin{comment}1. The experimental feasibility of the proposed operating regime deserves further discussion. Since simultaneous suppression depends on both the feedback phase and feedback strength, it would be useful to quantify the tolerances of these two parameters and indicate how far the representative operating points are from the instability boundary. Translating the phase tolerance into an equivalent optical path length tolerance for a representative wavelength would also help assess the practical requirements for experimental implementation.\end{comment}
+\resp I agree that this is important. The tolerances have been computed along the principal ECM, and the results are favorable.
+\begin{itemize}
+\item \emph{Phase.} At $\kappa\tau=0.18$, simultaneous suppression holds for $0.079\pi<\phi<0.320\pi$. The representative state at $\phi=0.25\pi$ tolerates $-0.171\pi$, limited by RIN, and $+0.070\pi$, limited by linewidth. At $\lambda=1550$ nm the tighter side corresponds to a round-trip path error of $54$ nm, i.e., a reflector displacement of $27$ nm; the other side allows $66$ nm. Values for 850 and 1310 nm are tabulated in the Supplement. For the $50$-ps round trip of the device-scale example, the same tolerance corresponds to a laser-frequency drift of about $0.7$ GHz.
+\item \emph{Feedback strength.} At fixed $\phi=0.25\pi$, simultaneous suppression persists for $0.127\le\kappa\tau\lesssim0.39$. Over this range the ECM remains unique and stable, with margins between $0.006$ and $0.017$.
+\item \emph{Distance to instability.} The representative state has a stability margin of $0.0154$, about twice that of the solitary laser ($0.0075$). The nearest unstable ECM along the phase axis is at $\phi\approx-0.08\pi$, i.e., $0.33\pi$ away. The trade-off state, by contrast, is only $0.11\pi$ from instability, with a margin of $0.0039$.
+\end{itemize}
+These requirements are compatible with standard piezo- or thermally tuned external reflectors.
+\chg New Sec.~4.2 (``Experimental tolerances''); new Fig.~4(c), with a top axis giving the reflector displacement at 1550 nm; Supplement S9, Tables S11 (wavelength conversion) and S12 (continuation in $\kappa\tau$); Discussion, paragraph on the tuning sequence.
+
+\begin{comment}2. The physical mechanism behind the transition from the linewidth--RIN tradeoff regime to the simultaneous suppression regime could be explained more intuitively. The manuscript attributes this behavior to changes in the neutral residue, relaxation damping, and source to output projection. It would be helpful if the authors could clarify which of these effects plays the dominant role for the representative cases shown in the manuscript.\end{comment}
+\resp The relaxation-pair contribution has been factorized exactly into a damping factor $\mathrm{Re}\,\lambda^{(0)}/\mathrm{Re}\,\lambda$, a delay-normalization factor $|d^{(0)}/d|^2$, a source--output projection factor, and a conjugate cross-term factor. The results are:
+
+\begin{center}
+\begin{tabular}{lccccc}
+\toprule
+State & damping & normalization & projection & cross terms & pair ratio\\
+\midrule
+Trade-off & 1.90 & 0.77 & 1.06 & 0.99 & 1.53\\
+Simultaneous suppression & 0.49 & 1.13 & 0.83 & 0.97 & 0.44\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Relaxation damping is therefore the dominant effect in both cases. The return near the in-phase condition ($\theta\simeq0$) roughly doubles the damping of the relaxation pair, whereas a return at $\theta\simeq-0.16\pi$ halves it. The normalization and projection factors are 10--25\% corrections that partly compensate each other. Along the full phase sweep (new Fig.~4(d)), the damping factor crosses unity at $\phi=0.104\pi$ and the RIN ratio at $\phi=0.080\pi$, so the residue factors move the RIN edge by only $\approx0.025\pi$. For the linewidth, the neutral-mode factor $F^{-2}$ dominates (0.48 and 0.77), while the ECM intensity change contributes only 2--3\%.
+
+The intuitive picture added to the manuscript is the following. The upper edge of the simultaneous-suppression window is where the return stops reducing chirp ($F$ too small), so linewidth narrowing is lost. The lower edge is where the return stops adding relaxation damping, so RIN is no longer suppressed. The two noise measures are thus controlled by different spectral sectors with different phase dependence, and the window is their overlap.
+\chg Sec.~5, new paragraph after Fig.~5; new Fig.~4(d); Supplement S3, new ``Factorization'' paragraph and Table S3; Discussion and Conclusion updated accordingly.
+
+\begin{comment}3. The relation between the weak feedback analytical criterion and the finite feedback results deserves some additional clarification. In particular, the representative simultaneous suppression point at finite feedback lies outside the first order phase interval predicted in the weak feedback limit. A more quantitative explanation of how the ECM phase and relaxation spectrum evolve with increasing feedback strength would help clarify the applicability and limitations of the analytical criterion.\end{comment}
+\resp This comment, together with Reviewer 2's comment 2, led to what I consider the most useful addition to the paper. Because $\theta=\phi+O(\kappa)$, the first-order criterion is equally a statement about the total return phase $\theta=\phi+\Omega\tau$. In this variable, the full-resolvent window is nearly independent of $\kappa\tau$ (new Fig.~4(b)).
+\begin{itemize}
+\item The upper (linewidth) edge stays at $\arctan(43/160)=0.0836\pi$ to within $2\times10^{-5}\pi$ for all $\kappa\tau\le0.24$.
+\item The lower (RIN) edge drifts from $-0.0958\pi$ to $-0.115\pi$ at $\kappa\tau=0.18$. This drift is the genuine finite-feedback modification of the relaxation spectrum.
+\end{itemize}
+The representative state $(\kappa\tau,\phi)=(0.18,0.25\pi)$ has $\theta=0.018\pi$, which lies \emph{inside} the first-order interval. Its displacement in $\phi$ is the ECM frequency shift $\Omega\tau=-\kappa\tau(\alpha\cos\theta+\sin\theta)\approx-0.23\pi$. The window also widens in $\phi$ because $d\phi/d\theta=F>1$ on the window, which is the same factor that reduces the linewidth (new Eq.~(7)). The applicability and limits of the criterion are quantified in the response to Reviewer 2, comment 2.
+\chg Sec.~2, new Eqs.~(7)--(8); Sec.~3.3, sentence after Eq.~(29); Sec.~4, revised paragraph discussing Fig.~3; new Sec.~4.1 and Fig.~4(a,b); Supplement S9 and Table S10.
+
+\section*{Reviewer 2}
+
+\begin{comment}1. The specific advance over existing optical-feedback theories should be clarified more explicitly. Although the manuscript presents a unified phase-resolved framework for linewidth and RIN, it remains unclear which analytical result or physical insight cannot be obtained from the established linewidth, small-signal RIN, and phase-dependent feedback theories separately. The authors should better highlight the unique contribution enabled by this joint formulation beyond combining existing approaches.\end{comment}
+\resp The established theories give, separately, the sign of the linewidth change (through $F$) and of the RIN change (through the small-signal response). They do not give the following results, which require both responses to be computed from the same operator and the same ECM:
+\begin{enumerate}
+\item A closed-form simultaneous-suppression interval, Eq.~(29), whose two edges are controlled by different spectral sectors: the upper edge by the neutral residue through $F$, and the lower edge by the damping of the relaxation pair.
+\item The near invariance of this interval in the total return phase with respect to both feedback strength and delay (Sec.~4.1 and Sec.~7). Combined with the identity $d\phi/d\theta=F$, this converts the analytic criterion into the experimentally relevant phase tolerance. The same factor $F$ therefore governs both the linewidth reduction and the stretching of the phase window.
+\item A delay-normalized residue factorization that identifies relaxation damping as the dominant RIN mechanism and quantifies the residue corrections (Sec.~5).
+\end{enumerate}
+I also now distinguish the work explicitly from delayed-feedback suppression of noise-induced pulsations (Ref.~[10], Flunkert and Sch\"oll), which does not address phase diffusion.
+\chg Introduction, two new passages at the end of the fourth and fifth paragraphs; Discussion, new sentences in the second paragraph; Abstract, one sentence added and two sentences condensed, so that the abstract stays close to the journal's guideline of about 100 words.
+
+\begin{comment}2. The predictive range of the weak-feedback phase criterion should be quantified more clearly. Equation (27) is derived in the $\kappa\to0$ limit and predicts simultaneous suppression only within $-0.0944\pi<\phi<0.0833\pi$, whereas the representative finite-feedback ``win-win'' state occurs at $\kappa\tau=0.18$ and $\phi=0.25\pi$, well outside this interval. The finite-difference check at $\kappa=10^{-5}$ only validates the local first-order derivative. The authors should therefore compare the phase boundaries predicted by the first-order criterion with those obtained from the full resolvent as $\kappa\tau$ increases, and identify the feedback range over which the analytical criterion remains quantitatively predictive.\end{comment}
+\resp I followed this suggestion exactly. For $\kappa\tau$ from $0.002$ to $0.24$, the boundaries of the stable simultaneous-suppression set were computed from the full resolvent, with edges refined by root finding. They were compared with three predictions: (a) Eq.~(29) read as an interval in $\phi$; (b) Eq.~(29) read as an interval in $\theta$; and (c) the $\theta$ bounds mapped to $\phi$ through the exact ECM phase equation. Representative values for $\tau=20$ ($\theta_\pm$, $\phi_\pm$ in units of $\pi$) are:
+
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+$\kappa\tau$ & $\theta_-$ (full) & $\theta_+$ (full) & $\phi_-$ (full) & $\phi_+$ (full) & $\phi_-$ (mapped)\\
+\midrule
+0.002 & $-0.0959$ & 0.0836 & $-0.0937$ & 0.0862 & $-0.0935$\\
+0.05 & $-0.1005$ & 0.0836 & $-0.0449$ & 0.1492 & $-0.0397$\\
+0.10 & $-0.1057$ & 0.0836 & 0.0043 & 0.2148 & 0.0164\\
+0.18 & $-0.1149$ & 0.0836 & 0.0792 & 0.3198 & 0.1061\\
+0.24 & $-0.1226$ & 0.0836 & 0.1320 & 0.3985 & 0.1735\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+In summary:
+\begin{itemize}
+\item Read in $\phi$, the first-order interval is predictive only for $\kappa\tau\lesssim0.01$.
+\item Read in $\theta$, it is accurate to $0.01\pi$ for $\kappa\tau\le0.10$ and to $0.02\pi$ for $\kappa\tau\le0.18$. The linewidth edge is essentially exact throughout.
+\item Mapped back to $\phi$, the upper edge is exact and the lower edge is accurate to $0.012\pi$ at $\kappa\tau=0.10$ and $0.027\pi$ at $\kappa\tau=0.18$.
+\end{itemize}
+For long cavities ($\tau=200$, $1000$) the agreement in $\theta$ is better than $10^{-3}\pi$ over the same range of $\kappa\tau$. In all cases the window is limited by the noise criteria, not by stability. I also thank the reviewer for quoting the interval: in checking it, I found that $-0.0944\pi$ and $0.0833\pi$ were the nearest points of the discrete phase grid used in the original calculation. The interval is now given in closed form, $-\arctan(106.862/344.420)<\phi<\arctan(43/160)$, i.e., $-0.0958\pi<\phi<0.0836\pi$.
+\chg Eq.~(29) and the following text (Sec.~3.3); new Sec.~4.1; new Fig.~4(a,b); Conclusion; Supplement S2 (closed form, Table S2 for other delays) and S9 (Table S10).
+
+\begin{comment}3. The ECM branch-selection procedure should be clarified, particularly for the parameter-robustness scans. [\dots] The authors should state the condition used to ensure ECM uniqueness and explain how ECM solutions are selected or continued in these extended scans. It should also be clarified whether the reported simultaneous-suppression states represent all stable ECMs or only the continuation of the principal branch.\end{comment}
+\resp The reviewer is right, and this point required a correction of the original scan. The ECM phase map is monotone, and the ECM unique for every $\phi$, if and only if $C=\kappa\tau\sqrt{1+\alpha^2}<1$, because $d\phi/d\theta=F$ and $\min_\theta F=1-C$. The main maps ($\kappa\tau\le0.18$, $\alpha=4$) satisfy $C\le0.74$; all baseline windows extend to $C=0.99$. The original $\alpha$--$\tau$ scans with $\kappa\le0.009$, however, reached $C=1.48$, $1.09$, and $2.19$ for $(\alpha,\tau)=(4,40)$, $(6,20)$, and $(6,40)$, where several ECMs exist.
+
+All these scans were therefore repeated without relying on continuation:
+\begin{itemize}
+\item Every ECM and antimode is enumerated by sampling the total return phase $\theta$, which parameterizes all solutions explicitly.
+\item Each solution is classified by its own characteristic spectrum, using a discretization-free Mikhailov count.
+\item The principal branch is defined by Newton continuation in $\kappa$ at fixed $\phi$ from the solitary laser.
+\item For every stable simultaneous-suppression state, we report whether $C<1$, whether it lies on the principal branch, and whether another stable ECM coexists at the same $\phi$.
+\end{itemize}
+
+The findings (Supplement Table S8) are as follows. Stable simultaneous-suppression states exist with $C<1$ in all nine $(\alpha,\tau)$ combinations, with at least 48 grid states each, so the conclusion does not depend on multi-ECM operation. For $(4,40)$ and $(6,20)$, all such states lie on the principal branch. For $(6,40)$, 28 of 108 lie on non-principal branches; this includes the ``best'' state of the original table, although the other ECMs at its phase are unstable. For $(4,40)$ and $(6,40)$, five states each coexist with another stable ECM and are flagged as potentially subject to mode hopping. The best states now reported are restricted to $C<1$. To answer the final question directly: the reported states are all stable ECMs (not only the principal continuation), with branch membership and multistability stated explicitly.
+\chg Sec.~2, new Eqs.~(7)--(8) and the branch-selection paragraph; Sec.~6, revised description of the $\alpha$--$\tau$ scans; Sec.~8, Mikhailov count; Supplement S1 (ECM enumeration), S4 (Mikhailov count), and S7 (new Table S8).
+
+\section*{Reviewer 3}
+
+\begin{comment}Throughout this work, the feedback delays (tau=10-40) only lead to short-cavity feedback regimes (tau$<$ relaxation oscillation time). Since a long-cavity feedback is often more helpful for linewidth suppression, I think it's better to further verify the effectiveness of the proposed method in in long-cavity feedback regimes.\end{comment}
+\resp I agree, and a new section on long external cavities has been added. With $2\pi/\omega_R\approx63$, the delays $\tau=200$ and $1000$ correspond to about 3 and 16 relaxation periods, i.e., round trips of 0.5 and 2.5 ns in the device-scale example. The results are as follows.
+\begin{itemize}
+\item \emph{The criterion becomes more accurate in long cavities.} At fixed $\kappa\tau\le0.24$, the full-resolvent window in $\theta$ is $[-0.089\pi,0.079\pi]$ for $\tau=200$ and $[-0.084\pi,0.078\pi]$ for $\tau=1000$. This agrees with the first-order bounds for the same delays to better than $10^{-3}\pi$. The upper edge approaches $\arctan(1/\alpha)$, as predicted analytically.
+\item \emph{Scaling of the two effects.} The reviewer is right that long cavities favor linewidth narrowing: this is governed by $\kappa\tau$ through $F$. The RIN leverage, however, scales with the feedback rate $\kappa$. At fixed $\kappa\tau=0.18$, the in-window state has a linewidth ratio of $0.77$ for both delays, but RIN ratios of only $0.93$ and $0.98$. I state this explicitly, because it is a practically relevant consequence of the theory.
+\item \emph{Multi-ECM regime.} Larger RIN suppression requires larger $\kappa$ and hence $C>1$, with several coexisting ECMs (up to three of them stable at the same feedback phase). With all ECMs enumerated, the stable simultaneous-suppression states still occupy the same $\theta$ interval. The in-phase (maximum-gain) ECM combines strong linewidth narrowing with RIN suppression: for $\tau=200$, linewidth and RIN ratios are $0.25$ and $0.76$ at $\kappa=0.005$, and $0.12$ and $0.65$ at $\kappa=0.009$. At these two settings it is the only stable ECM at its feedback phase.
+\item \emph{Nonlinear validation.} Nonlinear stochastic simulations that follow a selected ECM confirm the classification in the multi-ECM regime. For $\tau=200$ and $\kappa=0.005$ ($C=4.1$), the trade-off ECM gives simulated linewidth, RIN, and carrier ratios of $0.070\pm0.004$, $1.371\pm0.013$, and $1.353\pm0.013$ (linear: $0.070$, $1.369$, $1.352$), and the in-phase ECM gives $0.238\pm0.014$, $0.756\pm0.006$, and $0.760\pm0.007$ (linear: $0.246$, $0.761$, $0.764$). For $\tau=1000$ and $\kappa=0.001$, the corresponding values are $0.066\pm0.004$, $1.069\pm0.005$, and $1.068\pm0.005$ and $0.248\pm0.017$, $0.933\pm0.004$, and $0.933\pm0.004$ (linear: $0.070$, $1.069$, $1.069$ and $0.249$, $0.935$, $0.934$). Uncertainties are two standard errors over 128 realizations with records of up to $4\times10^{5}$ normalized time units.
+\end{itemize}
+In the multi-ECM regime, the theory identifies \emph{which} ECM provides simultaneous suppression. Whether a device remains on that ECM when other stable ECMs coexist is a question of mode selection, which is now stated as a limitation.
+\chg New Sec.~7 and Table~2; Fig.~4(b) (curves for $\tau=200$ and $1000$); Abstract, Discussion (limitations), and Conclusion; Supplement S10 (methods, Table S13, Fig.~S2, and simulation Table S14).
+
+\bigskip
+\noindent I hope that the revised manuscript is now suitable for publication in JOSA~B.
+
+\medskip
+\noindent Sincerely,\\[2pt]
+Mauricio Herrera-Mar\'in\\
+Facultad de Ingenier\'ia, Universidad del Desarrollo, Santiago, Chile
+
+\end{document}

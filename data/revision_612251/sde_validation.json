@@ -1,0 +1,95 @@
+{
+  "raw_batches": 72,
+  "cases": [
+    {
+      "preset": "tau20",
+      "case": "solitary",
+      "replicates": 128,
+      "batches": 8,
+      "D_sim": 1.0,
+      "RIN_sim": 1.0,
+      "D_lin": 1.0,
+      "RIN_lin": 1.0
+    },
+    {
+      "preset": "tau20",
+      "case": "tradeoff",
+      "replicates": 128,
+      "batches": 8,
+      "D_sim": 0.4737573627935295,
+      "RIN_sim": 1.568498047301145,
+      "D_lin": 0.4706919947333298,
+      "RIN_lin": 1.5645339255756001
+    },
+    {
+      "preset": "tau20",
+      "case": "win_win",
+      "replicates": 128,
+      "batches": 8,
+      "D_sim": 0.7908930221958171,
+      "RIN_sim": 0.47679545253779737,
+      "D_lin": 0.7500545423565066,
+      "RIN_lin": 0.47999104135828313
+    },
+    {
+      "preset": "long200",
+      "case": "solitary",
+      "replicates": 128,
+      "batches": 8,
+      "D_sim": 1.0,
+      "RIN_sim": 1.0,
+      "D_lin": 1.0,
+      "RIN_lin": 1.0
+    },
+    {
+      "preset": "long200",
+      "case": "tradeoff",
+      "replicates": 128,
+      "batches": 8,
+      "D_sim": 0.07020867504535984,
+      "RIN_sim": 1.3708127956774212,
+      "D_lin": 0.06966954495615456,
+      "RIN_lin": 1.3687419092141442
+    },
+    {
+      "preset": "long200",
+      "case": "win_win",
+      "replicates": 128,
+      "batches": 8,
+      "D_sim": 0.23804753133481796,
+      "RIN_sim": 0.7561253491110169,
+      "D_lin": 0.24626865671641793,
+      "RIN_lin": 0.7613195446851372
+    },
+    {
+      "preset": "long1000",
+      "case": "solitary",
+      "replicates": 128,
+      "batches": 8,
+      "D_sim": 1.0,
+      "RIN_sim": 1.0,
+      "D_lin": 1.0,
+      "RIN_lin": 1.0
+    },
+    {
+      "preset": "long1000",
+      "case": "tradeoff",
+      "replicates": 128,
+      "batches": 8,
+      "D_sim": 0.06634608020529098,
+      "RIN_sim": 1.0689425514584177,
+      "D_lin": 0.07041328441489118,
+      "RIN_lin": 1.0691345057259665
+    },
+    {
+      "preset": "long1000",
+      "case": "win_win",
+      "replicates": 128,
+      "batches": 8,
+      "D_sim": 0.2475134495240077,
+      "RIN_sim": 0.9331221887269502,
+      "D_lin": 0.24925074925074928,
+      "RIN_lin": 0.9348448531716633
+    }
+  ]
+}

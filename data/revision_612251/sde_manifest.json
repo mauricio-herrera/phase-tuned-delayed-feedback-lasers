@@ -1,0 +1,20 @@
+[
+  {
+    "preset": "tau20",
+    "rows": 3,
+    "columns": "case;kappa;theta_pi;n_real;max_meanI_drift;mean_freq_offset;D_sim;D_2se;D_lin;D_z;D_abs_sim_over_lin;D_abs_2se;D_abs_z;RIN_sim;RIN_2se;RIN_lin;RIN_z;RIN_abs_sim_over_lin;RIN_abs_2se;RIN_abs_z;N_sim;N_2se;N_lin;N_z;N_abs_sim_over_lin;N_abs_2se;N_abs_z",
+    "sha256": "ea7f07f8441e33d1eca96ddbd6f04715fa61e898a6a5f9b4b2bc56bd238bd614"
+  },
+  {
+    "preset": "long200",
+    "rows": 3,
+    "columns": "case;kappa;theta_pi;n_real;max_meanI_drift;mean_freq_offset;D_sim;D_2se;D_lin;D_z;D_abs_sim_over_lin;D_abs_2se;D_abs_z;RIN_sim;RIN_2se;RIN_lin;RIN_z;RIN_abs_sim_over_lin;RIN_abs_2se;RIN_abs_z;N_sim;N_2se;N_lin;N_z;N_abs_sim_over_lin;N_abs_2se;N_abs_z",
+    "sha256": "f922ebef2f9f88186316c90cfe285ea90271cee1cf9e4ece675f93666dcbbca5"
+  },
+  {
+    "preset": "long1000",
+    "rows": 3,
+    "columns": "case;kappa;theta_pi;n_real;max_meanI_drift;mean_freq_offset;D_sim;D_2se;D_lin;D_z;D_abs_sim_over_lin;D_abs_2se;D_abs_z;RIN_sim;RIN_2se;RIN_lin;RIN_z;RIN_abs_sim_over_lin;RIN_abs_2se;RIN_abs_z;N_sim;N_2se;N_lin;N_z;N_abs_sim_over_lin;N_abs_2se;N_abs_z",
+    "sha256": "6e95aa17b2a4d663e4196d18b99e5cc0e8fdda5cbfeb9f88e796fb8f17443828"
+  }
+]
