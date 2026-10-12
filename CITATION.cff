@@ -7,8 +7,8 @@ authors:
     given-names: "Mauricio"
     affiliation: "Universidad del Desarrollo"
     email: "mherrera@udd.cl"
-version: 1.0.0
-date-released: 2026-07-22
+version: 2.0.0
+date-released: 2026-10-12
 repository-code: "https://github.com/mauricio-herrera/phase-tuned-delayed-feedback-lasers"
 url: "https://github.com/mauricio-herrera/phase-tuned-delayed-feedback-lasers"
 license: MIT
@@ -20,3 +20,5 @@ keywords:
   - relative intensity noise
   - delay differential equations
   - stochastic simulation
+
+doi: 10.5281/zenodo.23320753
